@@ -1,0 +1,160 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1a2630;
+    background-image: url('./img/04.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    overflow-x: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1, h2 ,h4{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #2a3d51;
+    font-weight: bold;
+}
+
+/* Page Header */
+h1 {
+    font-size: 70px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Form Styles */
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+    color: #ffa1f3;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ffa1f3;
+    border-radius: 8px;
+    background-color: #2a3d51;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    background-color: #3b4b61;
+}
+
+button {
+    background-color: #ffa1f3;
+    color: #1c2e3b;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #1c2e3b;
+}
+
+/* Link Styles */
+a {
+    color: #2a3d51;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #2a3d51;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    margin-top: 10px;
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+/* Animation for the form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    input[type="email"], button {
+        font-size: 14px;
+    }
+}

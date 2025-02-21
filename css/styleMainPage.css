@@ -1,0 +1,128 @@
+body {
+    background-color: #0c164d;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 60px;
+    animation: slideIn 2s ease-out;
+}
+
+h1 font {
+    display: inline;
+}
+
+sub {
+    font-size: 0.5em;
+}
+
+/* Time and Spent Section */
+#timeNow, #timeSpent {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation Forms */
+form {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #f1c40f;
+    color: #0c164d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #f39c12;
+}
+
+/* Image Styles */
+img {
+    height: auto;
+    border-radius: 10px;
+    animation: zoomIn 2s ease-out;
+}
+
+/* Contact Section */
+.contact-icons {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.contact-icons a {
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    animation: fadeInUp 2s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

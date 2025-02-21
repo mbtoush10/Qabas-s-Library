@@ -1,0 +1,128 @@
+/* General styling for body */
+body {
+    background-color: #0c164d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.sub {
+    font-size: 30px;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.greeting {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffcc00;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.log-out-button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.log-out-button:hover {
+    background-color: #e64a19;
+}
+
+hr {
+    margin-top: 30px;
+    border-top: 1px solid #ffcc00;
+}
+
+.color-picker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.color-picker-container input {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.navigation-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navigation-links a {
+    color: #ffa1f3;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navigation-links a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ffcc00;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer a img {
+    transition: transform 0.3s ease;
+}
+
+footer a:hover img {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

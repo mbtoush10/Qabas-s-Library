@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./img/04.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+    animation: fadeIn 2s ease-out;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    animation: slideIn 2s ease-out;
+}
+
+h1 font {
+    display: inline;
+}
+
+sub {
+    font-size: 0.5em;
+}
+
+/* Form Styles */
+form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: auto;
+    animation: fadeInUp 2s ease-out;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 9px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #f1c40f;
+    color: #0c164d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #f39c12;
+}
+
+/* Forgot Password Link */
+a {
+    color: #adc0f0;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* New User Button */
+button {
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    color: #0c164d;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #f39c12;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.contact-icons a {
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

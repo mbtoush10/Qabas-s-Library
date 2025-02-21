@@ -1,0 +1,105 @@
+body {
+    background-color: #0c164d;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #ffa1f3;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+
+.books-list {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.books-list .intro-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ul#bookList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+ul#bookList li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ffcc00;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer a img {
+    transition: transform 0.3s ease;
+}
+
+footer a:hover img {
+    transform: scale(1.1);
+}

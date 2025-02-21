@@ -1,0 +1,153 @@
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0c164d;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #ffa1f3;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #ffa1f3;
+}
+
+/* Navbar styles */
+div p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffa1f3;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Form styles */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+fieldset {
+    border: 2px solid #ffa1f3;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    font-size: 24px;
+    color: #ffa1f3;
+    padding: 10px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ffa1f3;
+    border-radius: 5px;
+    background-color: #2d3a56;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #ffffff;
+    background-color: #3e4a6e;
+}
+
+button {
+    background-color: #ffa1f3;
+    color: #0c164d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #0c164d;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #2d3a56;
+    color: #fff;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    margin-top: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
